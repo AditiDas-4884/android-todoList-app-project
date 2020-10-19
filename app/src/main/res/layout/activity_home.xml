@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:orientation="vertical"
+    android:background="@drawable/background_design">
+
+    <TextView
+        android:id="@+id/todoHeading"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="My Tasks..."
+        android:background="#c000"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"></TextView>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="20dp"
+            android:elevation="10dp"
+            app:backgroundTint="#F8EFBA"
+            android:src="@drawable/ic_add"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+
+
+</LinearLayout>
